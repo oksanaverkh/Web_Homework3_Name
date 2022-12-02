@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Greeting</title>
+</head>
+
+<body>
+    Enter your name:
+    <input type="text" id="username" value="">
+    <button onclick="namedef()">Greeting</button>
+    <input type="text" id="result" readonly value="">
+
+    <script>
+        function namedef() {
+            username = document.getElementById("username").value;
+            result = "Hello, " + username + "!";
+            document.getElementById("result").value = result;
+        }
+    </script>
+</body>
+
+</html>
